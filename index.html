@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>번아웃 자가진단 테스트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>번아웃 자가진단 테스트</h1>
+        <div id="test-container">
+            <div id="question-section">
+                <h2 id="question-text"></h2>
+                <div class="options">
+                    <button onclick="selectOption(1)">전혀 아니다</button>
+                    <button onclick="selectOption(2)">가끔 그렇다</button>
+                    <button onclick="selectOption(3)">자주 그렇다</button>
+                    <button onclick="selectOption(4)">항상 그렇다</button>
+                </div>
+            </div>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>테스트 결과</h2>
+            <p id="score-text"></p>
+            <div id="solution-text"></div>
+            <button onclick="restartTest()">다시 테스트하기</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
